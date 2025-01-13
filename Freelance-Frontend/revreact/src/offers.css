@@ -1,0 +1,166 @@
+/* Container for the offers section */
+.offers-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title of the section */
+  .offers-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message style */
+  .error {
+    color: #ff4d4d;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* List of offers */
+  .offers-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .offer-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .offer-item:hover {
+    background-color: #e6e6e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer-item h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .offer-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Badge for offer status */
+  .status-badge {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .status-pending {
+    background-color: #f39c12;
+  }
+  
+  .status-accepted {
+    background-color: #27ae60;
+  }
+  
+  .status-rejected {
+    background-color: #e74c3c;
+  }
+  
+  /* Bid and Estimated Time styling */
+  .offer-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .offer-details p {
+    font-weight: bold;
+  }
+  
+  /* Freelancer ID - show as a basic text */
+  .freelancer-id {
+    color: #2980b9;
+    font-weight: bold;
+  }
+  /* Style for the message section within each offer */
+.offer-message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .offer-message p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .portfolio-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .portfolio-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin: 8px 0;
+  }
+  
+  .list-group-item {
+    display: flex;
+    flex-direction: column; /* Adjust to stack content */
+    justify-content: space-between;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 8px; /* Add spacing between buttons */
+  }
+  
+  .check-portfolio-btn,
+  .accept-btn,
+  .reject-btn {
+    margin: 0 8px 8px 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .check-portfolio-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .accept-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .reject-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .check-portfolio-btn:hover,
+  .accept-btn:hover,
+  .reject-btn:hover {
+    opacity: 0.9;
+  }
+  

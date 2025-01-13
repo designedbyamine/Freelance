@@ -1,0 +1,62 @@
+/* Hero Section */
+.hero {
+    background-size: cover;
+    
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero.jpg');
+    
+  }
+  
+  /* Feature Cards */
+  .feature-card {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .features, .how-it-works {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .feature-card, .how-it-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px; /* This ensures the content doesn't stretch too wide */
+  }
+  
+  .row.justify-content-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  

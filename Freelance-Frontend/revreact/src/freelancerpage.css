@@ -1,0 +1,165 @@
+.freelancer-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.freelancer-home-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.freelancer-home-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.freelancer-home-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.freelancer-projects-list {
+    width: 100%;
+}
+
+.freelancer-projects-list h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.freelancer-row {
+    display: flex;
+    width: 100%;
+}
+
+.freelancer-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.freelancer-card:hover {
+    transform: translateY(-5px);
+}
+
+.freelancer-card-body {
+    padding: 15px;
+}
+
+.freelancer-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.freelancer-card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.freelancer-card-body div {
+    margin-bottom: 10px;
+}
+
+.freelancer-card-body ul {
+    list-style-type: none;
+    
+}
+
+.freelancer-card-body ul li {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.freelancer-card-body div strong {
+    font-weight: bold;
+}
+
+.freelancer-card-body .freelancer-form-group {
+    margin-bottom: 20px;
+}
+
+.freelancer-card-body .freelancer-form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.freelancer-card-body .freelancer-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.freelancer-card-body .freelancer-btn:hover {
+    background-color: #0056b3;
+}
+
+.freelancer-offer-form-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding: 0 15px;
+}
+
+.freelancer-offer-form-container.show {
+    max-height: 1000px;
+    padding: 15px;
+}
+
+.freelancer-home-sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.freelancer-home-sidebar p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.freelancer-success-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: freelancer-slideIn 0.3s ease-out;
+}
+
+@keyframes freelancer-slideIn {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 20px;
+    }
+}

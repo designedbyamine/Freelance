@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile page styles */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Profile form card */
+.profile-form-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-form-card h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form input fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* File upload for photo */
+.profile-photo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-photo-container input[type="file"] {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Button */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+}
+
+/* Portfolio section */
+.portfolio-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.portfolio-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.portfolio-card-details {
+  padding: 15px;
+}
+
+.portfolio-card-details h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  white-space: normal; /* Ensure text wraps properly */
+}
+
+.portfolio-card-details p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  white-space: normal; /* Ensure text wraps properly */
+  word-wrap: break-word; /* Handle long words gracefully */
+}
+
+/* Error and Success messages */
+.alert {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #4caf50;
+}
+
+.alert-danger {
+  background-color: #f44336;
+}
+
+/* Toast notifications */
+.toast {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .portfolio-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .portfolio-card {
+    max-width: 100%;
+  }
+}

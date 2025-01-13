@@ -1,0 +1,134 @@
+/* General styling for the filters container */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between each filter */
+   
+  }
+  
+  /* Style for individual filter input fields */
+  .filters input {
+    width: 150px; /* Adjust the width as needed */
+    min-width: 120px; /* Minimum width for responsiveness */
+  }
+  
+  /* Portfolio styling */
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+  }
+  
+  .portfolio-item {
+    width: 300px; /* Adjust item size as per preference */
+    /*flex: 1 1 calc(33.33% - 15px); /* Ensures 3 items per row, with some gap */
+    box-sizing: border-box; /* To prevent items from overflowing */
+  }
+  
+  .portfolio-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .portfolio-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures images do not stretch */
+    border-radius: 5px;
+  }
+  
+  /* Portfolio item text alignment */
+  .portfolio-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-item p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-item strong {
+    font-weight: bold;
+  }
+  
+  .portfolio-item .portfolio-media {
+    flex-wrap: wrap;
+  }
+  
+  .port-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Adjusts space between items */
+    justify-content: flex-start; /* Aligns the items to the start of the container */
+  }
+  
+  /* Styles each individual portfolio item */
+  .port-items .portfolio-item {
+    width: calc(33.33% - 10px); /* Makes each portfolio item take 1/3 of the row with a small gap */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .port-items .portfolio-item:hover {
+    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+  }
+  
+  .port-items .portfolio-item .h3 {
+    font-size: 1.25rem; /* Set the title font size */
+    font-weight: bold; /* Bold the title */
+    margin-bottom: 10px; /* Space below the title */
+    color: #2c3e50; /* Darker color for titles */
+  }
+  
+  .port-items .portfolio-item .p {
+    font-size: 0.875rem; /* Smaller font for paragraph text */
+    line-height: 1.5; /* Adds line spacing for better readability */
+    margin-bottom: 10px; /* Space between paragraphs */
+    color: #555; /* Slightly lighter color for the description text */
+  }
+  
+  .port-items .portfolio-item strong {
+    font-weight: bold; /* Bold for labels like 'Skills' */
+    color: #333; /* Dark color for strong text */
+  }
+  
+  /* Ensure responsiveness for small screens */
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column; /* Stack inputs on smaller screens */
+      align-items: flex-start;
+    }
+  
+    .portfolio-item {
+      width: 100%;
+      flex: 1 1 100%; /* Stack items vertically on smaller screens */
+    }
+  }
+  
+  html, body {
+    height: 100%; 
+    margin: 0;
+  }
+  
+  /* Main wrapper container */
+  .app-container {
+    
+    min-height: 100vh; /* Make the container take at least the full height of the screen */
+  }
+  
+  /* Make the main content area flexible to fill available space */
+  .main-content {
+    flex-grow: 1; /* Allow the main content to take up remaining space */
+  }
+  
+  /* Style for the footer */
+  footer {
+    margin-top: auto; /* Push footer to the bottom */
+  }
